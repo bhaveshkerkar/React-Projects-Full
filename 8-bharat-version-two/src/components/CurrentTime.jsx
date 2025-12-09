@@ -8,12 +8,11 @@ let CurrentTime = () => {
     }, 1000);
 
     return () => clearInterval(intervalId);
-
   }, []);
 
   return (
     <p className="lead">
-      This is The Current Time : {time.toLocaleDateString()} -{" "}
+      Current Time is : {time.toLocaleDateString()} -{" "}
       {time.toLocaleTimeString()}
     </p>
   );
