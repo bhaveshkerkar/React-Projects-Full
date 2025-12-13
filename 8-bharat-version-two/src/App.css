@@ -42,3 +42,9 @@
   display: inline-block;
   vertical-align: middle;
 }
+
+.fw-inherit {
+  font-weight: inherit;
+  display: inline-block;
+  vertical-align: middle;
+}
