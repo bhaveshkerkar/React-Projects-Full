@@ -30,3 +30,9 @@
   display: inline-block;
   vertical-align: middle;
 }
+
+.fw-light {
+  font-weight: 200;
+  display: inline-block;
+  vertical-align: middle;
+}
