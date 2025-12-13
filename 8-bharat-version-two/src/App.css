@@ -54,3 +54,9 @@
   display: inline-block;
   vertical-align: middle;
 }
+
+.fw-unset {
+  font-weight: unset;
+  display: inline-block;
+  vertical-align: middle;
+}
