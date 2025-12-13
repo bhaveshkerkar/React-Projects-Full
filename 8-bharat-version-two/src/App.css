@@ -48,3 +48,9 @@
   display: inline-block;
   vertical-align: middle;
 }
+
+.fw-initial {
+  font-weight: initial;
+  display: inline-block;
+  vertical-align: middle;
+}
