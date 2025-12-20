@@ -19,9 +19,6 @@ React-Projects-Full/
 ├── 8-Social-media/
 └── README.md
 
-yaml
-Copy code
-
 ---
 
 ## 📊 Projects Overview
