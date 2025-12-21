@@ -1,0 +1,48 @@
+.app-container {
+  display: flex;
+  flex-direction: row;
+}
+.content {
+  width: 100%;
+}
+
+.sidebar {
+  min-height: 800px;
+}
+
+.post-card {
+  margin: 20px 50px;
+  position: relative;
+}
+
+.reactions {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  font-size: 1.2rem;
+  margin: 15px 0 0 0;
+}
+
+.create-post {
+  margin: 30px 50px;
+  width: 80%;
+  position: relative;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.welcome-message {
+  margin-top: 50px;
+}
+
+.spinner {
+  margin-top: 100px;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 100px;
+}
