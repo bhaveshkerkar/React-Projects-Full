@@ -1,18 +1,26 @@
 import { createSlice, current } from "@reduxjs/toolkit";
 
-const itemsSlice = createSlice({
+const fetchStatusSlice = createSlice({
   name: "fetchStatus",
   initialState: {
-    fetchDone: false,
+    fetchDone: false, // indicates whether the fetch operation has completed true/false
     currentfetching: false,
   },
 
   reducers: {
-    addInitialItems: (store, action) => {
-      return store;
+    markFetchDone: (state) => {
+      return (state.fetchDone = true);
+    },
+
+    markFetchingStarted: (state) => {
+      return (state.currentfetching = true);
+    },
+
+    markFetchingFinished: (state) => {
+      return (state.currentfetching = false);
     },
   },
 });
 
-export const itemsActions = itemsSlice.actions;
-export default itemsSlice;
+export const fetchStatusActions = fetchStatusSlice.actions;
+export default fetchStatusSlice;
