@@ -1,7 +1,7 @@
-const items = [
+export const DEFAULT_ITEMS = [
   {
     id: "001",
-    image: "items/1.jpg",
+    image: "images/1.jpg",
     company: "Carlton London",
     item_name: "Rhodium-Plated CZ Floral Studs",
     original_price: 1045,
