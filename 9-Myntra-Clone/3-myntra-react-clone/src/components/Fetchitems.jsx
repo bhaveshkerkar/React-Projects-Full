@@ -8,13 +8,12 @@ const FetchItems = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (fetchStatus.fetchDone) {
-      return;
-    }
+    if (fetchStatus.fetchDone) return;
+
     const controller = new AbortController();
     const signal = controller.signal;
-    dispatch(fetchStatusActions.markFetchingStarted());
 
+    dispatch(fetchStatusActions.markFetchingStarted());
     fetch("http://localhost:8080/items", { signal })
       .then((res) => res.json())
       .then(({ items }) => {
