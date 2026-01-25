@@ -385,3 +385,19 @@ a.action_container:link {
   height: 14px;
   cursor: pointer;
 }
+
+.spinner {
+  width: 56px;
+  height: 56px;
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  border-top-color: #ff3f6c; /* Myntra pink vibe */
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
