@@ -1,4 +1,13 @@
+import { useDispatch } from "react-redux";
+import { MdDelete } from "react-icons/md";
+import { bagActions } from "../store/bagSlice";
+
 const BagItem = ({ item }) => {
+  const dispatch = useDispatch();
+  const handleRemoveFromBag = () => {
+    dispatch(bagActions.removeFromBag(item.id)); // Dispatch action to remove item from bag
+  };
+
   return (
     <div className="bag-item-container">
       <div className="item-left-part">
@@ -24,11 +33,8 @@ const BagItem = ({ item }) => {
         </div>
       </div>
 
-      <div
-        className="remove-from-cart"
-        onClick={() => console.log("Item Removed from Bag")}
-      >
-        X
+      <div className="remove-from-cart" onClick={handleRemoveFromBag}>
+        <MdDelete />
       </div>
     </div>
   );
